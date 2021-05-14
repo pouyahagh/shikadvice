@@ -11,7 +11,7 @@ body {
     font-family: 'Shabnam', Arial, sans-serif;
     font-weight: normal;
     font-size: 14px;
-    background: url('/img/4.jpg') no-repeat center center fixed;
+    /* background: url('/img/4.jpg') no-repeat center center fixed; */
     background-size: cover;
 }
 
