@@ -90,7 +90,6 @@
       });
     };
     async function postData(url = '', data = {}) {
-      console.log(data.toString());
       const response = await fetch(url, {
         method: 'POST', 
         mode: 'cors', 

@@ -12,6 +12,6 @@ let i = 0;
 app.post('/img' , (req, res) => {
     i++;
     const base64Data = req.body.image.replace(/^data:image\/png;base64,/, "");
-      fs.appendFileSync(path.join(__dirname, `./img/result-${i}.png`), base64Data, 'base64');
+      fs.appendFileSync(path.join(__dirname, `./public/img/result-${i}.png`), base64Data, 'base64');
 })
 app.listen(port);
