@@ -9,7 +9,7 @@
   let startStreaming = false;
   
   const [start, screenshot] = buttons;
-  $('body').style.background = 'url("/img/4.jpg") no-repeat center center fixed';
+  $('body').style.background = 'url("/img/4.webp") no-repeat center center fixed';
   const videoConstraints = {
     video: {
       width: {
