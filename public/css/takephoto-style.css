@@ -1,0 +1,166 @@
+
+@import url('https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.css');
+
+body {
+    width: 100%;
+    height: 100vh;
+    /* we cant assign 100% to height neveeeeer */
+    margin: auto;
+    background-color: #f5f5f5;
+    color: white;
+    font-family: 'Shabnam', Arial, sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    background: url('/img/4.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+video{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.canvas-styles {
+    border: 2px white solid;
+    border-radius: 2px;
+    width: 100px;
+    height: 56px;
+}
+/* .video-options{
+
+} */
+.main__takephoto__header {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 6rem;
+
+    margin-top: 2rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    /* background-color: rgba(255, 255, 255, 0.6); */
+}
+
+
+.heading-primary {
+    color: #011f14;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+}
+
+.heading-primary-main {
+    display: block;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 1rem;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+
+.heading-primary-sub {
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.45rem;
+    text-align: center;
+    animation: moveInRight 1s ease-out;
+
+}
+
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+
+}
+
+.main__takephoto__container {
+    width: 75%;
+    margin: auto;
+}
+
+.main__takephoto__content--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: nowrap;
+
+}
+
+.main__takephoto__content--container>* {
+    border-radius: 10px;
+    
+    color: #011f14;
+    
+
+
+}
+
+.photolist {
+    width: 100% ;
+    height:8rem;
+    margin-top:1.5rem;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.camera{
+    /* width: 100% ; */
+    height:33.9rem;
+    margin-top:1.5rem;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.takephoto__buttons {
+    width: 100% ;
+    height:1.5rem;
+    margin-top:6rem;
+   
+    display: flex;
+    flex-direction:row;
+    justify-content:space-around;
+}
+.cam--btn{
+    color:#800020;
+    border: 1px solid #011f14;
+    border-radius:5px;
+    height: 2rem;
+    width:10rem;
+    font-family: "Shabnam";
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.cam--btn:hover{
+    background-color: rgba(255, 255, 255, 0.9);
+}
